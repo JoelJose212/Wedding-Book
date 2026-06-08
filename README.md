@@ -1,16 +1,34 @@
-# React + Vite
+# WeddingBook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning, modern wedding photography platform homepage called **WeddingBook** — built as a UI-only, fast, responsive React + Vite application.
 
-Currently, two official plugins are available:
+## Features
+- **Navbar**: Fixed position, transitions dynamically from transparent to solid white on scroll, with a fully responsive slide-out hamburger menu on mobile.
+- **Hero Slider**: Full-screen (100vh) immersive slider utilizing high-quality Unsplash wedding photography, dark overlay fades, slide numbers, photographer avatar credits, auto-play progression (5s) with crossfades, and interactive vertical thumbnail strips that sync dynamically with slide changes.
+- **Photographers Welcome Section**: Clean presentation showing stats (12.5M+ Images, 50K+ Events, 8K+ Photographers) and calls-to-action with interactive hover effects.
+- **The WeddingBook Difference**: Modern grid section featuring dark card tiles, glassmorphic hover animations, and crisp typography detailing platform features.
+- **Footer**: Extensive sitemap footer containing logo, taglines, circular social links, and structured navigation.
+- **Micro-animations**: Intersection Observer animations that trigger custom CSS slide/fade transitions as you scroll through the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Framework**: React 19
+- **Build Tool**: Vite
+- **Styling**: Vanilla CSS (CSS Modules and Custom Properties / Design Tokens)
+- **Typography**: Google Fonts — Cormorant Garamond (headings) & Inter (body)
 
-## React Compiler
+## Setup & Running Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+2. **Start Dev Server**:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Build Production Assets**:
+   ```bash
+   npm run build
+   ```
