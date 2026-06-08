@@ -11,11 +11,11 @@ export const slides = [
     number: '01',
   },
   {
-    bg: '/alice_bob.jpg',
-    location: 'Goa, India',
-    couple: 'ALICE & BOB',
+    bg: '/aadhya_aarav.jpg',
+    location: 'Varanasi, India',
+    couple: 'AADHYA & AARAV',
     description:
-      "With the ocean as their witness and stars as their blessing, Alice & Bob's wedding on March 8, 2022 was pure magic written in golden light.",
+      "With the God as their witness and stars as their blessing, Aadhya & Aarav wedding on March 8, 2022 was pure magic written in golden light.",
     photographer: 'Priya Kapoor Studios',
     avatar:
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
@@ -36,7 +36,7 @@ export const slides = [
 
 export const cardThumbs = [
   '/sara_john.jpg',
-  '/alice_bob.jpg',
+  '/aadhya_aarav.jpg',
   '/meera_arjun.jpg',
   'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400&q=80',
 ];
