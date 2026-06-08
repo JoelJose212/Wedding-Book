@@ -24,9 +24,9 @@ export const slides = [
   {
     bg: '/meera_arjun.jpg',
     location: 'Udaipur, India',
-    couple: 'MEERA & ARJUN',
+    couple: 'ZARA & AYAAN',
     description:
-      "In the city of lakes, Meera & Arjun wove a story of love that November will never forget — a royal affair on November 14, 2023.",
+      "In the city of lakes, Zara & Ayaan wove a story of love that November will never forget — a royal affair on November 14, 2023.",
     photographer: 'Lens & Love Co.',
     avatar:
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
