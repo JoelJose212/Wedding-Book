@@ -22,7 +22,7 @@ export const slides = [
     number: '02',
   },
   {
-    bg: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1920&q=80',
+    bg: '/meera_arjun.jpg',
     location: 'Udaipur, India',
     couple: 'MEERA & ARJUN',
     description:
@@ -37,7 +37,7 @@ export const slides = [
 export const cardThumbs = [
   '/sara_john.jpg',
   '/alice_bob.jpg',
-  'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&q=80',
+  '/meera_arjun.jpg',
   'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400&q=80',
 ];
 
