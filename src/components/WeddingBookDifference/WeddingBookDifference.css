@@ -1,0 +1,109 @@
+/* ============================================
+   WeddingBook Difference Section
+   ============================================ */
+
+.wbd-section {
+  background: var(--color-primary-dark);
+  padding: 120px 0;
+}
+
+.wbd-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+/* Badge */
+.wbd-badge {
+  display: inline-block;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+}
+
+/* Heading */
+.wbd-heading {
+  color: var(--color-white);
+}
+
+/* Cards Grid */
+.wbd-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.wbd-card {
+  background: var(--color-card-dark);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.wbd-card:hover {
+  background: #263548;
+  transform: translateY(-4px);
+}
+
+.wbd-card-number {
+  display: block;
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.wbd-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 12px;
+}
+
+.wbd-card-body {
+  font-size: 14px;
+  color: var(--color-muted-light);
+  line-height: 1.7;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .wbd-section {
+    padding: 80px 0;
+  }
+
+  .wbd-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wbd-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .wbd-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wbd-section {
+    padding: 60px 0;
+  }
+
+  .wbd-grid {
+    grid-template-columns: 1fr;
+  }
+}

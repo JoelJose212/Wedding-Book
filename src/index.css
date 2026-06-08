@@ -1,0 +1,263 @@
+/* ============================================
+   WeddingBook — Global Styles & Design Tokens
+   ============================================ */
+
+:root {
+  /* Colors */
+  --color-primary-dark: #0F172A;
+  --color-accent-gold: #C9A84C;
+  --color-white: #FFFFFF;
+  --color-muted: #64748B;
+  --color-muted-light: #94A3B8;
+  --color-card-dark: #1E293B;
+  --color-section-light: #FAFAFA;
+  --color-footer-bg: #0a0a0a;
+  --color-btn-dark: #1a1a1a;
+
+  /* Fonts */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Layout */
+  --max-width: 1280px;
+  --nav-height: 70px;
+
+  /* Transitions */
+  --transition-smooth: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   Reset & Base
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-primary-dark);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  outline: none;
+}
+
+/* ============================================
+   Custom Scrollbar
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ============================================
+   Typography System
+   ============================================ */
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ============================================
+   Global Button Styles
+   ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 13px 28px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.4);
+}
+
+.btn-primary {
+  background: var(--color-btn-dark);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: #333;
+  transform: scale(1.02);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--color-btn-dark);
+  color: var(--color-btn-dark);
+}
+
+.btn-outline:hover {
+  background: #f8f8f8;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: inherit;
+  padding: 13px 20px;
+}
+
+.btn-ghost:hover {
+  opacity: 0.7;
+}
+
+.btn-pill {
+  border-radius: 999px;
+}
+
+/* ============================================
+   Scroll Animation System
+   ============================================ */
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children delays */
+.stagger-1 { transition-delay: 0ms; }
+.stagger-2 { transition-delay: 100ms; }
+.stagger-3 { transition-delay: 200ms; }
+.stagger-4 { transition-delay: 300ms; }
+.stagger-5 { transition-delay: 400ms; }
+.stagger-6 { transition-delay: 500ms; }
+.stagger-7 { transition-delay: 600ms; }
+.stagger-8 { transition-delay: 700ms; }
+
+/* Card stagger (80ms) */
+.card-stagger-1 { transition-delay: 0ms; }
+.card-stagger-2 { transition-delay: 80ms; }
+.card-stagger-3 { transition-delay: 160ms; }
+.card-stagger-4 { transition-delay: 240ms; }
+.card-stagger-5 { transition-delay: 320ms; }
+.card-stagger-6 { transition-delay: 400ms; }
+.card-stagger-7 { transition-delay: 480ms; }
+.card-stagger-8 { transition-delay: 560ms; }
+
+/* ============================================
+   Container
+   ============================================ */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}
