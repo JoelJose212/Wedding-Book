@@ -11,7 +11,7 @@ export const slides = [
     number: '01',
   },
   {
-    bg: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1920&q=80',
+    bg: '/alice_bob.jpg',
     location: 'Goa, India',
     couple: 'ALICE & BOB',
     description:
@@ -36,7 +36,7 @@ export const slides = [
 
 export const cardThumbs = [
   '/sara_john.jpg',
-  'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=400&q=80',
+  '/alice_bob.jpg',
   'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&q=80',
   'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400&q=80',
 ];
