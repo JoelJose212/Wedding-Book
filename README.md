@@ -1,34 +1,56 @@
 # WeddingBook
 
-A stunning, modern wedding photography platform homepage called **WeddingBook** — built as a UI-only, fast, responsive React + Vite application.
+A stunning, modern wedding photography platform homepage called **WeddingBook** — built as a UI-only, highly interactive React + Vite web application.
 
-## Features
-- **Navbar**: Fixed position, transitions dynamically from transparent to solid white on scroll, with a fully responsive slide-out hamburger menu on mobile.
-- **Hero Slider**: Full-screen (100vh) immersive slider utilizing high-quality Unsplash wedding photography, dark overlay fades, slide numbers, photographer avatar credits, auto-play progression (5s) with crossfades, and interactive vertical thumbnail strips that sync dynamically with slide changes.
-- **Photographers Welcome Section**: Clean presentation showing stats (12.5M+ Images, 50K+ Events, 8K+ Photographers) and calls-to-action with interactive hover effects.
-- **The WeddingBook Difference**: Modern grid section featuring dark card tiles, glassmorphic hover animations, and crisp typography detailing platform features.
-- **Footer**: Extensive sitemap footer containing logo, taglines, circular social links, and structured navigation.
-- **Micro-animations**: Intersection Observer animations that trigger custom CSS slide/fade transitions as you scroll through the page.
+---
 
-## Tech Stack
-- **Framework**: React 19
-- **Build Tool**: Vite
-- **Styling**: Vanilla CSS (CSS Modules and Custom Properties / Design Tokens)
-- **Typography**: Google Fonts — Cormorant Garamond (headings) & Inter (body)
+## 🛠️ Tech Stack
 
-## Setup & Running Locally
+This project is built using a modern, lightweight, and high-performance frontend tech stack:
 
-1. **Install Dependencies**:
+| Layer | Technology | Details / Usage |
+| :--- | :--- | :--- |
+| **Framework** | **React 19** | Powers the component-driven structure and dynamic state management (e.g. slider pagination, mobile navigation toggle). |
+| **Build Tool** | **Vite** | Modern, fast developer environment & bundling engine for production builds. |
+| **Styling** | **Vanilla CSS** | Structured with CSS Custom Properties (Design Tokens), flexbox, grid layouts, and custom scrollbars for responsive designs. |
+| **Animations** | **CSS Transitions + Intersection Observer** | Triggers slick fade-in and slide animations on scroll, featuring stagger delays between sibling components. |
+| **Typography** | **Google Fonts** | `Cormorant Garamond` (elegant headings) & `Inter` (highly legible body text). |
+| **Media Assets** | **Local Images & Unsplash** | Blends custom local media assets (`sara_john.jpg`, `alice_bob.jpg`, `meera_arjun.jpg`) with high-resolution curated photography. |
+
+---
+
+## 🌟 Key Features
+- 🧭 **Dynamic Navbar**: Fixed header that transitions from transparent to solid white with bottom shadows when scrolled. Collapses into an animated slide-down hamburger menu on mobile devices.
+- 🎞️ **Cinematic Hero Slider**: Full-viewport slider with a customized crossfade duration, timeline progress indicator, sliding background name overlays, arrow navigation, and a synced vertical preview strip.
+- 📸 **Photographer & Portfolio Credits**: Includes photographer avatar icons, name tags, location trackers, and dedicated call-to-actions.
+- ✨ **Micro-Animations**: Intersection Observer-based staggered fade-in animations that make the page feel reactive and polished.
+- 🛡️ **WeddingBook Difference Section**: Clean 4x2 interactive card grid showcasing platform features with smooth tilt/lift hover feedback.
+- 👣 **Detailed Footer**: Responsive multi-column layout with circular social icons, legal disclosures, and extensive sitemap links.
+
+---
+
+## 🚀 Setup & Running Locally
+
+Follow these instructions to run the project on your machine:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/JoelJose212/Wedding-Book.git
+   cd Wedding-Book
+   ```
+
+2. **Install Dependencies**:
    ```bash
    npm install
    ```
 
-2. **Start Dev Server**:
+3. **Start the Development Server**:
    ```bash
    npm run dev
    ```
+   Open `http://localhost:5173` in your browser.
 
-3. **Build Production Assets**:
+4. **Compile Production Bundle**:
    ```bash
    npm run build
    ```
