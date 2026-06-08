@@ -1,6 +1,6 @@
 export const slides = [
   {
-    bg: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80',
+    bg: '/sara_john.jpg',
     location: 'Rajasthan, India',
     couple: 'SARA & JOHN',
     description:
@@ -35,7 +35,7 @@ export const slides = [
 ];
 
 export const cardThumbs = [
-  'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&q=80',
+  '/sara_john.jpg',
   'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=400&q=80',
   'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&q=80',
   'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400&q=80',
